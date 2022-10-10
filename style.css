@@ -1,4 +1,104 @@
-.button{
-    background:red;
-    color:black;
+
+#top-header{
+    display: flex;    
+    justify-content:center;
+    height: 200px;
+    width:100%;
+    font-family:'Comfortaa', cursive 'Space Grotesk', sans-serif;
+    background-image:url("https://cdn.pixabay.com/photo/2015/08/08/11/00/banner-880294__340.jpg")
+} 
+body {
+   
+       background-image: linear-gradient( rgb(11, 59, 89), rgb(19, 136, 208));
+       color: #fff;
+       font-family: 'Noto Sans', sans-serif;
 }
+footer{
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+    font-family:'Comfortaa', cursive 'Space Grotesk', sans-serif;
+} 
+#header{
+
+    font-family:'Comfortaa', cursive 'Space Grotesk', sans-serif;
+}   
+
+h1{
+    font-size: 50px;
+    font-family:'Comfortaa', cursive 'Space Grotesk', sans-serif;
+    padding-top: 30px;
+}
+h3{
+    padding:20px;
+  }
+  #h1{
+    font-size: 50px;
+    font-family:'Comfortaa', cursive 'Space Grotesk', sans-serif;
+  }
+  #h3{
+    font-size: 30px;
+    font-family:'Comfortaa', cursive 'Space Grotesk', sans-serif; 
+  }
+  #star-chart{
+    display:block;
+    
+    justify-content: center;
+    align-items: center; 
+  }
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #353535; */
+    font-size: 3rem;
+    font-family: 'Comfortaa','Space Grotesk', sans-serif;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+#image-1{
+    display:flex;
+    
+    padding: 20px;
+   font-style: normal;
+}
+#image-2{
+    background-image: url("https://earthsky.org/upl/2019/04/Mercury_false_color_surface_MESSENGER.png");
+    width:100%;
+    height:300px;
+}
+#image-3{
+    background-image: url("https://image.shutterstock.com/image-illustration/zodiac-sign-beautiful-white-stars-260nw-321220976.jpg");
+
+}
+#image-calendar{
+    max-height: 200px;
+    max-width: 200px;
+}
+
+
+.material-symbols-outlined{
+    padding-right: 10px;
+}
+
+/*font-family: 'Comfortaa', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Teko', sans-serif;
+font-family: 'Titillium Web', sans-serif;*/
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
