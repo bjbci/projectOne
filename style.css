@@ -1,5 +1,20 @@
-
-
+#top-header{
+  display: flex;    
+  justify-content:center;
+  height: 200px;
+  width:100%;
+  color:white;
+  font-family:'Comfortaa', cursive 'Space Grotesk', sans-serif;
+  background-image:url("https://cdn.pixabay.com/photo/2015/08/08/11/00/banner-880294__340.jpg")
+} 
+footer{
+  display:flex;
+  color:white;
+  background-color:rgb(58, 58, 114);
+  justify-content: center;
+  padding: 20px;
+  font-family:'Comfortaa', cursive 'Space Grotesk', sans-serif;
+} 
  .row {
     max-width: 75rem;
     margin-right: auto;
