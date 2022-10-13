@@ -1,24 +1,23 @@
 var form = document.querySelector('.signForm')
 //var date = dateInput.value
 var signBtn = document.getElementById('signSubmit')
-var sign = document.getElementById('signInput')
+//var sign = document.getElementById('signInput')
 var mercuryBtn = document.getElementById('mercurySubmit')
 var mercury = document.getElementById('dateInput')
 var dateInput = document.getElementById('dateInput')
 
 
 
-document.querySelector('form.signForm').addEventListener('submit', function (e) {
+document.querySelector('.column').addEventListener('click', function (e) {
   e.preventDefault();
-
-  console.log(sign.value);
-var signValue = sign.value
+console.log(e)
+var signValue = e.target.id
   fetch("https://octoproxymus.herokuapp.com?secret=walrus&url=http://ohmanda.com/api/horoscope/" + signValue, {
     'Access-Control-Allow-Origin': '*'
   })
       .then(response => response.json())
       .then(function(astrology) {
-        //console.log(astrology)
+        
         displayHoroscope(astrology)
       })
   
@@ -29,7 +28,7 @@ document.querySelector('form.mercuryForm').addEventListener('submit', function (
   e.preventDefault();
 
   console.log(mercury.value);
-var dateValue = sign.value
+var dateValue = dateInput.value
   fetch("https://mercuryretrogradeapi.com/?date=" + dateValue, {
     'Access-Control-Allow-Origin': '*'
   })
