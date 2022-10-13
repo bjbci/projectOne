@@ -8,8 +8,8 @@ var dateInput = document.getElementById('dateInput')
 
 
 
-document.querySelector('.column').addEventListener('click', function (e) {
-  e.preventDefault();
+document.querySelector('#signSelector').addEventListener('click', function (e) {
+e.preventDefault();
 console.log(e)
 var signValue = e.target.id
   fetch("https://octoproxymus.herokuapp.com?secret=walrus&url=http://ohmanda.com/api/horoscope/" + signValue, {
@@ -17,12 +17,10 @@ var signValue = e.target.id
   })
       .then(response => response.json())
       .then(function(astrology) {
-        
-        displayHoroscope(astrology)
+       displayHoroscope(astrology)
       })
-  
-
 })
+
 
 document.querySelector('form.mercuryForm').addEventListener('submit', function (e) {
   e.preventDefault();
