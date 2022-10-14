@@ -50,6 +50,9 @@ Github Page: Add here
 ## Credits
 
 Hunter Mayer @https://github.com/Hunter-Mayer
+
 Julissa Bonilla @https://github.com/JujuB39
+
 Brian Bulowicz @https://github.com/bjbci
+
 Kyle Barker @https://github.com/kyle188
