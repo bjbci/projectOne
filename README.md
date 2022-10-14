@@ -43,7 +43,7 @@ Have a quality README (including a unique name, description, technologies used, 
 
 ### Deployed Application Links
 
-Github Repo: Add Here
+Github Repo: https://github.com/bjbci/projectOne
 
 Github Page: Add here
 
