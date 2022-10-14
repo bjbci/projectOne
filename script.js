@@ -34,35 +34,18 @@ var dateValue = dateInput.value
       .then(function(mercury) {
       displayMercury(mercury)
       })
-  
-
 })
 
 function displayHoroscope(data) {
   document.querySelector('.horoscopeEl').innerHTML= ""
   console.log(data)
-  var horoscope = document.createElement('p')
+  var horoscope = document.createElement('p');
   horoscope.textContent = data.horoscope
   document.querySelector('.horoscopeEl').append(horoscope)
 }
 
 function displayMercury(data2) {
-  document.querySelector('.mercuryEl').innerHTML= ""
-  console.log(data2)
-  var mercury = document.createElement('p')
-  mercury.textContent = data2.mercury
-  document.querySelector('.mercuryEl').append(mercury)
+  //console.log(data2)
+  var src =  data2.is_retrograde?"mercuryis.png": "mercurynot2.png"; //ternary operator 
+  document.querySelector('.mercuryEl').innerHTML = `<img src="${src}" alt="Mercury Retrograde Graphic">` //template literals
 }
-
-// fetch("https://mercuryretrogradeapi.com/?date=" + date, {
-//   'Access-Control-Allow-Origin': '*'
-// })
-//     .then(response => response.json())
-//     .then(function(retrograde) {
-//       console.log(retrograde)
-//     })
-
-// function handleSubmitSign(event) {
-  
-//   console.log(sign)
-// }
