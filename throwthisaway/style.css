@@ -1,0 +1,212 @@
+body{
+    background-image:url("https://cdn.pixabay.com/photo/2016/07/30/19/47/banner-1557834__340.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    }
+    #top-header{
+      display: flex;    
+      justify-content:center;
+      height: 200px;
+      width:100%;
+      color:white;
+      border-bottom: 20px, solid, white;
+    } 
+    #top-header h1{
+      /*padding-top: 30px;*/
+      font-family: 'Titillium Web','Space Grotesk', sans-serif;
+    }
+    #top-header h3{
+        margin-inline-start: 25px;
+      font-family:'Titillium Web','Space Grotesk', sans-serif;
+    }
+    .form-label{
+        color:white;
+        font-size:20px;
+     
+    }
+    p{
+        color:white;
+    }
+    #zodiacText{
+        font-size: 30px;
+        font-family: 'Titillium Web','Space Grotesk', sans-serif;
+        text-align: center;
+    }
+    #footer{
+      display:flex;
+      color:white;
+      background-color:rgb(58, 58, 114);
+      justify-content: center;
+      padding: 20px;
+      font-family:'Comfortaa', 'Space Grotesk', sans-serif;
+    } 
+    #footer h4{
+            font-family:'Titillium Web','Space Grotesk', sans-serif;
+    }
+    .material-symbols-outlined{
+        padding-top: 5px;
+padding-right: 20px;
+    }
+    #container{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    #mercuryFormBox{
+        
+       text-align: center;
+       font-family:'Titillium Web', sans-serif,'Space Grotesk', sans-serif;
+        padding-bottom: 50px;
+        
+    }
+    input #form-control{
+        padding-left: 100px;
+    }
+    #dateInput{
+     margin-inline-start: 205px;
+      width:38%;
+     padding-left:15px;
+      padding-right: 15px;
+    }
+    #mercurySubmit{
+        padding-left:0px;
+        background-color:transparent;
+        color:white;
+        height:30px;
+        width:250px;
+       border-style:hidden dotted hidden dotted;
+       border-color:white;
+    }
+    #mercurySubmit:hover{
+        background:white;
+        color:black;
+        border-style:hidden dotted hidden dotted;
+        border-color:black;
+    }
+     .row {
+        max-width: 75rem;
+        margin-right: auto;
+        margin-left: auto;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    .expand-column-wrapper {
+        height: 100vh;
+        max-width: 100rem;
+      }
+      
+      .expand-column-wrapper .column {
+        padding: 1rem;
+        transition: all 0.5s ease-in-out;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+      
+      .expand-column-wrapper .column:hover {
+        cursor: pointer;
+        -webkit-flex-basis: 40%;
+            -ms-flex-preferred-size: 40%;
+                flex-basis: 40%;
+      }
+      
+      .expand-column-wrapper .column:hover .expand-column-content {
+        opacity: 1;
+      }
+      
+      .expand-column-wrapper .expand-column-content {
+        color: #fefefe;
+        font-weight: bold;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      @media screen and (max-width: 39.9375em) {
+        .expand-column-wrapper {
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+        }
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(1) {
+        background: url("https://hips.hearstapps.com/hmg-prod/images/aries-zodiac-sign-abstract-night-sky-background-royalty-free-image-1584536731.jpg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(2) {
+        background: url("https://us.123rf.com/450wm/rawpixel/rawpixel1812/rawpixel181201054/113085658-hand-drawn-horoscope-symbol-of-taurus-illustration.jpg?ver=6") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(3) {
+        background: url("https://media.istockphoto.com/vectors/illustration-of-gemini-astrological-sign-as-two-beautiful-girls-vector-id1301716942?k=20&m=1301716942&s=612x612&w=0&h=G03LDfpds7oQIUYC_SXYBrk_XQ2tbZsjSH3UlwuvXGo=") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(4) {
+        background: url("https://www.deccanherald.com/sites/dh/files/articleimages/2022/08/27/5-1139677-1661542202.jpg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(5) {
+        background: url("https://media.allure.com/photos/5f0f6be19a4ab50008160c40/master/pass/leo%20promo.jpg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(6) {
+        background: url("https://c8.alamy.com/comp/2G208XE/virgo-zodiac-sign-design-zodiac-design-with-star-grid-abstract-vergo-design-signs-with-texts-in-latin-vector-graphic-illustrations-of-horoscope-s-2G208XE.jpg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(7) {
+        background: url("https://i.pinimg.com/originals/92/e0/d1/92e0d1fbc02f7f1713e459d5f0cf58c6.jpg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(8) {
+        background: url("https://media.allure.com/photos/5e00f1348ba6f90008cf2044/3:2/w_2700,h_1800,c_limit/Scorpio.jpg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(9) {
+        background: url("https://mintspace.io/wp-content/uploads/2021/10/yasushi-matsuoka-sagittarius-yasu-art-studio.jpg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(10) {
+        background: url("https://metropolitangirls.com/wp-content/uploads/2021/11/Capricorn_8.jpg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      }
+      
+      .expand-column-wrapper .column:nth-of-type(11) {
+        background: url("https://cdn.shopify.com/s/files/1/0135/5287/7625/products/DISCHARGE_AGE_OF_AQUARIUS_ALT_V42048X2048_RS_2000x.png?v=1558046098") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      } 
+      .expand-column-wrapper .column:nth-of-type(12) {
+        background: url("https://www.pinkvilla.com/imageresize/pisces_431.jpg?width=752&t=pvorg") center center no-repeat;
+        height: 100vh;
+        background-size: cover;
+      } 
+      
