@@ -2,6 +2,7 @@ body{
 background-image:url("https://cdn.pixabay.com/photo/2016/07/30/19/47/banner-1557834__340.jpg");
 background-repeat:no-repeat;
 background-size:cover;
+color:white;
 }
 #top-header{
   display: flex;    
@@ -20,6 +21,7 @@ background-size:cover;
 #top-header h3{
   font-family:'Titillium Web', sans-serif,'Space Grotesk', sans-serif;
 }
+
 #footer{
   display:flex;
   color:white;
@@ -31,10 +33,28 @@ background-size:cover;
 #footer h4{
   font-family:'Titillium Web', sans-serif,'Space Grotesk', sans-serif;
 }
-#datepicker{
-  width:40%;
-}
 
+#dateInput-color{
+  color:white;
+  background-color:transparent;
+  
+}
+.mercuryForm{
+  padding-left: 400px;
+  /*justify-content: center;*/
+}
+#mercurySubmit{
+background-color:transparent;
+border: 2px dotted white;
+color:white;
+border-radius: 20px;
+height:50px;
+width:200px;
+/*padding-left: 50px;*/
+}
+#dateInput{
+  width:30%;
+}
  .row {
     max-width: 75rem;
     margin-right: auto;
