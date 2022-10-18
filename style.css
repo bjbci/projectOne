@@ -1,3 +1,15 @@
+.card {
+  background-color: rgb(53, 50, 63);
+  text-align: center;
+  color: white;
+  margin-left: auto;
+  margin-right: 0;
+}
+.card-divider {
+  background-color: rgb(30, 27, 53);
+  text-align: center;
+  color: rgb(76, 85, 136);
+}
 body{
   background-image:url("https://cdn.pixabay.com/photo/2016/07/30/19/47/banner-1557834__340.jpg");
   background-repeat:no-repeat;

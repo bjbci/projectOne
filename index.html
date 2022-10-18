@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASTROLOGY APP</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fredoka+One&family=Space+Grotesk&family=Teko&family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" > 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTROLOGY APP</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+    crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Fredoka+One&family=Space+Grotesk&family=Teko&family=Titillium+Web&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header id="top-header">
-      <section>
-        <div id="header" >
+  <header id="top-header">
+    <section>
+      <div id="header">
         <h1>BASIC DAILY ASTROLOGY APP</h1>
         <h3 id="isIsNotRetrograde"></h3>
       </div>
     </section>
-    </header>
-       <form class="mercuryForm"  id="container">
-        <div id="mercuryFormBox">
-          <label for="dateInput" class="form-label">ENTER ANY DATE mm/dd/yyyy TO SEE IF MERCURY WILL BE IN RETROGRADE</label>
-          <input type="date" class="form-control" id="dateInput">
-          <input type="submit" value="SUBMIT" id="mercurySubmit">
-        </div>
-    </form>
-    <p id="zodiacText">CLICK ON YOUR ZODIAC SIGN FOR TODAYS HOROSCOPE</p>
-    <div class="horoscopeEl">
+  </header>
+  <form class="mercuryForm" id="container">
+    <div id="mercuryFormBox">
+      <label for="dateInput" class="form-label">ENTER ANY DATE mm/dd/yyyy TO SEE IF MERCURY WILL BE IN
+        RETROGRADE</label>
+      <input type="date" class="form-control" id="dateInput">
+      <input type="submit" value="SUBMIT" id="mercurySubmit">
     </div>
-
-    <div class="mercuryEl">
-     
+  </form>
+  <p id="zodiacText">CLICK ON YOUR ZODIAC SIGN FOR TODAYS HOROSCOPE</p>
+  <div class="card" style="width: 200px;">
+    <div class="card-divider">
+      <strong>Lucky Numbers</strong>
     </div>
-
-  <div class="row expand-column-wrapper" id= "signSelector">
-        <div class="column" id= "aries">
-          <button class="expand-column-content" class="button"  data-cardSelectButton>Aries</button>
-        </div>
-        <div class="column" id="taurus">
-          <button class="expand-column-content" class="button"  data-cardSelectButton>Taurus</button>
-        </div>
-        <div class="column" id= "gemini" >
-          <button class="expand-column-content" class="button" data-cardSelectButton>Gemini</button>
-        </div>
-        <div class="column" id="cancer">
-          <button class="expand-column-content"class="button"  data-cardSelectButton>Cancer</button>
-        </div>
-        <div class="column" id="leo">
-          <button class="expand-column-content" class="button"  data-cardSelectButton>Leo</button>
-        </div>
-        <div class="column" id="virgo">
-          <button class="expand-column-content" class="button"  data-cardSelectButton>Virgo</button>
-        </div>
-        <div class="column" id= "libra">
-          <button class="expand-column-content" class="button"  data-cardSelectButton>Libra</button>
-        </div>
-        <div class="column" id="scorpio">
-          <button class="expand-column-content" class="button"  data-cardSelectButton>Scorpio</button>
-        </div>
-        <div class="column" id= "sagittarius">
-          <button class="expand-column-content" class="button"  data-cardSelectButton>Sagittarius</button>
-        </div>
-        <div class="column" id = "capricorn">
-          <button class="expand-column-content" class="button"  data-cardSelectButton>Capricorn</button>
-        </div>
-        <div class="column" id= "aquarius">
-          <button class="expand-column-content" class="button"   data-cardSelectButton>Aquarius</button>
-          </div>
-        <div class="column" id= "pisces">
-          <button class="expand-column-content" class="button"   data-cardSelectButton>Pisces</button>
-        </div>
-      </div>
-<!-- Compressed JavaScript -->
-<footer id="footer">
-  <span class="material-symbols-outlined">
+    <div class="card-section" id="revealText" style="display:none;">
+    </div>
+    <button class="button medium secondary" type="button" id="revealBtn"> Click to reveal your lucky numbers</button>
+  </div>
+  <div class="horoscopeEl">
+  </div>
+  <div class="mercuryEl">
+  </div>
+  <div class="row expand-column-wrapper" id="signSelector">
+    <div class="column" id="aries">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Aries</button>
+    </div>
+    <div class="column" id="taurus">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Taurus</button>
+    </div>
+    <div class="column" id="gemini">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Gemini</button>
+    </div>
+    <div class="column" id="cancer">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Cancer</button>
+    </div>
+    <div class="column" id="leo">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Leo</button>
+    </div>
+    <div class="column" id="virgo">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Virgo</button>
+    </div>
+    <div class="column" id="libra">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Libra</button>
+    </div>
+    <div class="column" id="scorpio">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Scorpio</button>
+    </div>
+    <div class="column" id="sagittarius">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Sagittarius</button>
+    </div>
+    <div class="column" id="capricorn">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Capricorn</button>
+    </div>
+    <div class="column" id="aquarius">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Aquarius</button>
+    </div>
+    <div class="column" id="pisces">
+      <button class="expand-column-content" class="button" data-cardSelectButton>Pisces</button>
+    </div>
+  </div>
+  <!-- Compressed JavaScript -->
+  <footer id="footer">
+    <span class="material-symbols-outlined">
       info
-      </span>
-  
-<h4> MADE BY BRIAN JULISSA HUNTER AND KYLE</h4>
-<!-- Compressed JavaScript -->
-<script src="./script.js"></script>
-</footer>
+    </span>
+    <h4> MADE BY BRIAN JULISSA HUNTER AND KYLE</h4>
+    <!-- Compressed JavaScript -->
+  </footer>
+  <script src="./script.js"></script>
 </body>
 </html>

@@ -5,6 +5,25 @@ var signBtn = document.getElementById('signSubmit')
 var mercuryBtn = document.getElementById('mercurySubmit')
 var mercury = document.getElementById('dateInput')
 var dateInput = document.getElementById('dateInput')
+var luckyNumbers = document.querySelector('.card-section')
+var revealBtn = document.getElementById('revealBtn')
+
+
+function showNumbers(event) {
+  var numbers = [];
+  for(let i = 0; i < 6; i++) {
+  numbers.push(Math.floor(Math.random() * 70));
+  luckyNumbers.innerHTML = numbers;
+}
+}
+
+revealBtn.addEventListener("click", function(event) {
+  event.preventDefault()
+  document.getElementById('revealText').style.display='block'
+  showNumbers();
+})
+
+
 document.querySelector('#signSelector').addEventListener('click', function (e) {
 e.preventDefault();
 console.log(e)
@@ -26,9 +45,10 @@ var dateValue = dateInput.value
   })
       .then(response => response.json())
       .then(function(mercury) {
-      displayMercury(mercury)
+        displayMercury(mercury)
       })
-})
+    })
+    localStorage.setItem("Date Searched", dateInput.value)
 
 function displayHoroscope(data) {
   document.querySelector('.horoscopeEl').innerHTML= ""
@@ -51,7 +71,7 @@ fetch("https://mercuryretrogradeapi.com")
     return response.json()
 
 })
-.then(function(jsonData){
+.then(function(jsonData){ //Mercury will not show as being retrograde in the heading until December 30th. On that date, it will change the heading. 
     console.log(jsonData)
     if (jsonData === true){
         isIsNot.innerText="MERCURY IS IN RETROGRADE TODAY"
