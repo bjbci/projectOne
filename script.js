@@ -48,7 +48,7 @@ var dateValue = dateInput.value
         displayMercury(mercury)
       })
     })
-    localStorage.setItem("Date Searched", dateInput.value)
+    //localStorage.setItem("Date Searched", dateInput.value)
 
 function displayHoroscope(data) {
   document.querySelector('.horoscopeEl').innerHTML= ""
@@ -71,7 +71,7 @@ fetch("https://mercuryretrogradeapi.com")
     return response.json()
 
 })
-.then(function(jsonData){ //Mercury will not show as being retrograde in the heading until December 30th. On that date, it will change the heading. 
+.then(function(jsonData){
     console.log(jsonData)
     if (jsonData === true){
         isIsNot.innerText="MERCURY IS IN RETROGRADE TODAY"
