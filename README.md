@@ -37,7 +37,7 @@ Have a quality README (including a unique name, description, technologies used, 
 
 ### Screenshot
 
-![screenshot](add here)
+![screenshot](/projectOne%20Screencap.png)
 
 
 
@@ -45,7 +45,7 @@ Have a quality README (including a unique name, description, technologies used, 
 
 Github Repo: https://github.com/bjbci/projectOne
 
-Github Page: Add here
+Github Page: https://bjbci.github.io/projectOne/
 
 ## Credits
 
